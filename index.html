@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Javascript Practice</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header>
+            <h1>Calculators</h1>
+        </header>
+        <!--area of a Rectangle-->
+        <div class="areaRectangle">
+            <h2>Area of a Rectangle</h2>
+            <label for="length">Length</label>
+            <input type="number" class="length" id="length" placeholder="Length">
+            <label for="width">Width</label>
+            <input type="number" class="width" id="width" placeholder="Width">
+            <div class="btnDiv">
+                <button onClick="getLength(), getWidth(), calcArea()" class="calc" id="calc">Calculate Area</button>
+            </div>
+        </div>
+        <!--area of a Triangle-->
+        <div class="areaOfATriangle">
+            <h2>Area of a Triangle</h2>
+            <label for="base">Base</label>
+            <input type="number" class="base" id="base" placeholder="Base">
+            <label for="tHeight">Height</label>
+            <input type="text" class="tHeight" id="tHeight" placeholder="Height">
+            <div class="btnDiv">
+                <button onClick="calcTHeight()" class="calcTArea" id="calcTArea">Calculate Area</button>
+            </div>
+        </div>
+        <!--area of a Circle-->
+        <div class="areaOfACircleDiv">
+            <h2>Area of a Circle</h2>
+            <label for="radius">Radius</label>
+            <input type="number" class="radius" id="radius" placeholder="Radius">
+            <div class="btnDiv">
+                <button onClick="calcCArea()" class="calcCArea" id="calcCArea">Calculate Area</button>
+            </div>
+        </div>
+        <!--celsius to fahrenheit-->
+        <div class="celsiusToFahrenheitDiv">
+            <h2>Celsius to Fahrenheit</h2>
+            <label for="celsius">Celsius</label>
+            <input type="number" class="celsius" id="celsius" placeholder="Celsius">
+            <div class="btnDiv">
+                <button onClick="celsiusToFahrenheit()" class="celsiusToFahrenheit" id="celsiusToFahrenheit">Calculate Area</button>
+            </div>
+        </div>
+        <script src="main.js" async defer></script>
+    </body>
+</html>
